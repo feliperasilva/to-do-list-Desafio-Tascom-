@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/feliperasilva/to-do-list-Desafio-Tascom-/issues"
   },
-  "homepage": "https://github.com/feliperasilva/to-do-list-Desafio-Tascom-#readme"
+  "homepage": "https://github.com/feliperasilva/to-do-list-Desafio-Tascom-#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
