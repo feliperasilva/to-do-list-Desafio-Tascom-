@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/feliperasilva/to-do-list-Desafio-Tascom-#readme",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "sequelize": "^6.37.6"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
   }
 }
