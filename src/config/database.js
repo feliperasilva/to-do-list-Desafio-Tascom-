@@ -2,10 +2,10 @@ module.exports = {
   dialect: "postgres",
   host: "localhost",
   username: "postgres",
-  password: "",
+  password: "root",
   database: "todo_list",
   define: {
-    timestamp: true,
+    timestamps: true,
     underscored: true,
   },
 };
