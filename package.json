@@ -1,0 +1,29 @@
+{
+  "name": "to-do-list-desafio-tascom-",
+  "version": "1.0.0",
+  "description": "Desafio to do list da tascom",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feliperasilva/to-do-list-Desafio-Tascom-.git"
+  },
+  "author": "Felipe Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feliperasilva/to-do-list-Desafio-Tascom-/issues"
+  },
+  "homepage": "https://github.com/feliperasilva/to-do-list-Desafio-Tascom-#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.14.0",
+    "postgres": "^3.4.5",
+    "sequelize": "^6.37.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "sequelize-cli": "^6.6.2"
+  }
+}
