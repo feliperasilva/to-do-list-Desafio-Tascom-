@@ -18,6 +18,7 @@
   "homepage": "https://github.com/feliperasilva/to-do-list-Desafio-Tascom-#readme",
   "dependencies": {
     "express": "^4.21.2",
+    "pg": "^8.14.0",
     "postgres": "^3.4.5",
     "sequelize": "^6.37.6"
   },
