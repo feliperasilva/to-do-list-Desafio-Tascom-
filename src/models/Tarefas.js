@@ -6,7 +6,14 @@ class Tarefas extends Model {
       {
         titulo: DataTypes.STRING,
         status: DataTypes.ENUM("Em andamento", "Finalizado"),
-        prioridade: DataTypes.INTEGER,
+        prioridade: {
+          type: DataTypes.INTEGER,
+          validate: {
+            min: 1,
+            max: 10,
+          },
+        },
+
         descricao: DataTypes.TEXT,
       },
       {
