@@ -35,4 +35,12 @@ module.exports = {
       res.status(400).json({ error });
     }
   },
+  async listTarefas(req, res) {
+    try {
+      const tarefa = await Tarefas.findAll();
+      res.status(200).json({ tarefa });
+    } catch (error) {
+      res.status(400).json({ error });
+    }
+  },
 };
