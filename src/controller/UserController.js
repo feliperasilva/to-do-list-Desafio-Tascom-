@@ -43,4 +43,15 @@ module.exports = {
       res.status(400).json({ error });
     }
   },
+  async deleteTarefas(req, res) {
+    const { id } = req.params;
+
+    const tarefa = await Tarefas.findOne({ where: { id } });
+    if (!tarefa) {
+      res.status(401).json({ message: "Tarefa não encontrada" });
+    } else {
+      await Tarefas.destroy({ where: { id } });
+      res.status(200).json({ ok: true });
+    }
+  },
 };
