@@ -1,17 +1,10 @@
 const { Router } = require("express");
-const Tarefas = require("./models/Tarefas");
-
+const UserController = require("./controller/UserController");
 const router = Router();
 
-router.post("/", async (req, res) => {
-  const { titulo, status, prioridade, descricao } = req.body;
-  const tarefas = await Tarefas.create({
-    titulo,
-    status,
-    prioridade,
-    descricao,
-  });
-  res.json({ tarefas });
-});
+router.post("/tarefas-create", UserController.createTarefas);
+router.put("/tarefas-update/:id", UserController.updateTarefas);
+router.get("/tarefas-list", UserController.listTarefas);
+router.delete("/tarefas-delete/:id", UserController.deleteTarefas);
 
 module.exports = router;
